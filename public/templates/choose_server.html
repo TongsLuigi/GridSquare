@@ -1,0 +1,10 @@
+<div ng-controller="ChooseServerScreenController as chooseServerCtrl">
+    <h2 class="screen_title">サーバ選択</h2>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <label>接続先サーバ</label>
+            <input type="text" class="pure-input-1" ng-model="chooseServerCtrl.serverUrl">
+        </fieldset>
+        <button class="pure-button pure-input-1" ng-click="chooseServerCtrl.goToChooseGameScreen()">接続</button>
+    </form>
+</div>

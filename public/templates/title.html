@@ -1,0 +1,12 @@
+
+<div ng-controller="TitleScreenController as titleCtrl">
+    <h1 class="h1_big_game_title">GridSquares</h1>
+    <h3 class="sub_title">A BAD COPY OF METASQUARES</h3>
+    <ul class="title_menu_list">
+        <li><button class="pure-button" ng-click="titleCtrl.goToGameScreen('vs_player_first')">VS. COMPUTER (PLAYER FIRST)</button></li>
+        <li><button class="pure-button" ng-click="titleCtrl.goToGameScreen('vs_cp_first')">VS. COMPUTER (CP FIRST)</button></li>
+        <li><button class="pure-button" ng-click="titleCtrl.goToGameScreen('solo')">SOLO</button></li>
+        <li><button class="pure-button" ng-click="titleCtrl.goToGameScreen('exhibition')">EXHIBITION</button></li>
+        <li><button class="pure-button" ng-click="titleCtrl.goToRemoteScreen()">REMOTE</button></li>
+    </ul>
+</div>

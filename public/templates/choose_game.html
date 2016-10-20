@@ -1,0 +1,19 @@
+<div ng-controller="ChooseGameScreenController as chooseGameCtrl">
+    <h2 class="screen_title">ゲーム選択</h2>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <label>部屋名</label>
+            <input type="text" class="pure-input-1" value="" placeholder="部屋名を入力" ng-model="chooseGameCtrl.gameName">
+            <label>暗証番号</label>
+            <input type="text" class="pure-input-1" value="" placeholder="暗証番号（５桁）" ng-model="chooseGameCtrl.gamePass" pattern="[0-9]{5}">
+            <button class="pure-button pure-input-1" ng-click="chooseGameCtrl.createNewGame()">新規作成</button>
+        </fieldset>
+        <fieldset>
+            <label>部屋番号</label>
+            <input type="text" class="pure-input-1" value="" placeholder="部屋番号（数字）" ng-model="chooseGameCtrl.gameId">
+            <label>暗証番号</label>
+            <input type="text" class="pure-input-1" value="" placeholder="暗証番号（５桁）" ng-model="chooseGameCtrl.gamePassToLogin" pattern="[0-9]{5}">
+            <button class="pure-button pure-input-1" ng-click="chooseGameCtrl.attendGame()">参加</button>
+        </fieldset>
+    </form>
+</div>

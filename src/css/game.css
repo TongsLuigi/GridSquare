@@ -1,0 +1,88 @@
+
+.color_player_draw{
+    color: #fff;
+}
+
+.color_player_1{
+    color: #39e600;
+}
+
+.color_player_2{
+    color: #e64d00;
+}
+
+div.game_board_area{
+    text-align: center;
+}
+
+#canvas_main_board{
+    width: 360px;
+    height: 360px;
+    border: solid 5px #999;
+    border-radius: 0px;
+    margin: 7px 0;
+}
+
+table.table_players_points{
+    width: 100%;
+    table-layout: fixed;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 26px;
+    font-size: 16px;
+    -webkit-appearance:none;
+    -webkit-tap-highlight-color:transparent;
+    color: #eee;
+}
+
+table.table_players_points tr.row_title th{
+    cursor: pointer;
+}
+
+table.table_players_points tr.row_score{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+table.table_players_points tr.row_score td{
+    font-size: 20px;
+}
+
+table.table_players_points th{
+    font-weight: normal;
+}
+
+table.table_players_points th.th_center_desc{
+    width: 90px;
+}
+
+h1.game_title{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 35px;
+    margin: 5px 0;
+    letter-spacing: 3px;
+}
+
+h2.mode_indicator{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    margin: 8px 0;
+    color: #eee;
+}
+
+h3.game_message{
+    font-family: sans-serif;
+    font-size: 23px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+p.button_show_lines_wrapper{
+    width: 360px;
+    margin: 5px auto;
+}

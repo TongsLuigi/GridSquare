@@ -1,0 +1,28 @@
+
+h1.h1_big_game_title{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 39px;
+    text-align: center;
+    margin: 10px;
+}
+
+h3.sub_title{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+ul.title_menu_list{
+    list-style-type: none;
+}
+
+ul.title_menu_list li{
+    padding: 10px 0;
+}
+
+ul.title_menu_list li button{
+    width: 100%;
+}

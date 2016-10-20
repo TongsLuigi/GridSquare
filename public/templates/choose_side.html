@@ -1,0 +1,16 @@
+<div ng-controller="ChooseSideScreenController as chooseSideCtrl">
+    <h2 class="screen_title">先攻／後攻選択</h2>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <label>部屋名</label>
+            <input type="text" class="pure-input-1" value="" placeholder="" ng-value="chooseSideCtrl.game.name">
+            <label>部屋番号</label>
+            <input type="text" class="pure-input-1" value="" placeholder="" ng-value="chooseSideCtrl.game.id">
+        </fieldset>
+        <fieldset>
+            <label>先攻／後攻選択</label>
+            <button class="pure-button pure-input-1" ng-click="chooseSideCtrl.chooseSide(1)" ng-disabled="chooseSideCtrl.game.player1_id != null">先攻</button>
+            <button class="pure-button pure-input-1" ng-click="chooseSideCtrl.chooseSide(2)" ng-disabled="chooseSideCtrl.game.player2_id != null">後攻</button>
+        </fieldset>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+
+<div class="game_board_area" ng-controller="GameScreenController as mainCtrl">
+    <h2 class="mode_indicator">MODE: {{mainCtrl.gameMode}}</h2>
+    <canvas id="canvas_main_board" width="360" height="360"></canvas>
+    <div class="">
+        <form class="pure-form pure-form-stacked" ng-show="mainCtrl.shouldReconnect">
+            <fieldset>
+                <label>ゲームサーバと接続していません</label>
+                <button class="pure-button pure-input-1" ng-click="mainCtrl.doReconnect()">再接続</button>
+            </fieldset>
+        </form>
+        <h3 class="game_message" ng-class="mainCtrl.playerClass">{{mainCtrl.resultMsg}}</h3>
+        <table class="table_players_points non_user_selectable">
+            <tbody>
+            <tr class="row_title">
+                <th ng-click="mainCtrl.switchStrokeEnabled(1)" class="color_player_1">Player 1 <i ng-class="mainCtrl.getStrokeEnabledIconClass(1)"></i></th>
+                <th class="th_center_desc"></th>
+                <th ng-click="mainCtrl.switchStrokeEnabled(2)" class="color_player_2">Player 2 <i ng-class="mainCtrl.getStrokeEnabledIconClass(2)"></i></th>
+            </tr>
+            <tr class="" ng-show="mainCtrl.askShouldShowConnectionStatus()">
+                <td ng-click="mainCtrl.switchStrokeEnabled(1)" class="color_player_1"><i class="fa" ng-class="mainCtrl.getPlayerStatusIconClass(1)"></i><span>{{mainCtrl.getPlayerStatusMessage(1)}}</span></td>
+                <th class="th_center_desc">STATUS</th>
+                <td ng-click="mainCtrl.switchStrokeEnabled(2)" class="color_player_2"><i class="fa" ng-class="mainCtrl.getPlayerStatusIconClass(2)"></i><span>{{mainCtrl.getPlayerStatusMessage(2)}}</span></td>
+            </tr>
+            <tr class="row_score">
+                <td ng-bind="mainCtrl.playerPoints.player1" ng-click="mainCtrl.switchStrokeEnabled(1)" class="color_player_1"></td>
+                <th class="th_center_desc">SCORE</th>
+                <td ng-bind="mainCtrl.playerPoints.player2" ng-click="mainCtrl.switchStrokeEnabled(2)" class="color_player_2"></td>
+            </tr>
+            <tr class="row_score">
+                <td ng-bind="mainCtrl.rectanglesCount.player1" ng-click="mainCtrl.switchStrokeEnabled(1)" class="color_player_1"></td>
+                <th class="th_center_desc">SQUARES</th>
+                <td ng-bind="mainCtrl.rectanglesCount.player2" ng-click="mainCtrl.switchStrokeEnabled(2)" class="color_player_2"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
